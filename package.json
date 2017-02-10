@@ -1,0 +1,23 @@
+{
+  "name": "infinite-list",
+  "version": "0.0.1",
+  "description": "a js type for infinite lazy list and some method to control the list Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waksana/infinite-list.git"
+  },
+  "keywords": [
+    "list",
+    "lazy"
+  ],
+  "author": "waksana@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waksana/infinite-list/issues"
+  },
+  "homepage": "https://github.com/waksana/infinite-list#readme"
+}

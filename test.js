@@ -1,9 +1,3 @@
-# infinity-list
-a js type for infinity lazy list and some method to control the list
-
-## EXAMPLE
-
-```javascript
 var List = require('.');
 var assert = require('assert');
 
@@ -28,4 +22,3 @@ assert.deepEqual(prime.take(5), [2, 3, 5, 7, 11]);
 var fibs = List.make(0, () => List.make(1, () => fibs.zipWith(fibs.tail(), (a, b) => a + b)));
 
 assert.deepEqual(fibs.take(6), [0, 1, 1, 2, 3, 5]);
-```
