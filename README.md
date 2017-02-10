@@ -1,5 +1,5 @@
-# infinity-list
-a js type for infinity lazy list and some method to control the list
+# list8
+a js type for infinity lazy list and some method to control the list. 8 indicates infinity
 
 ## EXAMPLE
 
