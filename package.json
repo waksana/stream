@@ -1,7 +1,7 @@
 {
   "name": "list8",
   "version": "0.0.1",
-  "description": "a js type for infinite lazy list and some method to control the list Edit",
+  "description": "a js structure for infinite lazy list and some method to control the list Edit",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
