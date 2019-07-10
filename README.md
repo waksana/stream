@@ -1,5 +1,5 @@
 # list8
-a js type for infinity lazy list and some method to control the list. 8 indicates infinity
+a js data structure for infinity lazy list and some method to control the list. 8 indicates infinity
 
 ## EXAMPLE
 
@@ -8,7 +8,7 @@ var N = List.cons(1, () => N.map(n => n + 1)); //nature number list
 var ones = List.cons(1, () => ones);
 
 //combine header and a list into a list
-var Z = List.cons(0, () => N); //Integer list
+var Z = List.cons(0, N); //Integer list
 
 assert.deepEqual(N.drop(5).take(5), [6, 7, 8, 9, 10]);
 assert.deepEqual(N.filter(a => a % 2 == 0).take(5), [2, 4, 6, 8, 10]);
