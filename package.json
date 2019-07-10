@@ -1,6 +1,6 @@
 {
   "name": "list8",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a js structure for infinite lazy list and some method to control the list Edit",
   "main": "index.js",
   "scripts": {
