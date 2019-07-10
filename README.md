@@ -13,7 +13,7 @@ const N = cons(1, () => N.map(n => n + 1));
 const Z = cons(0, N);
 ```
 
-## EXAMPLE
+## Example
 
 ```javascript
 var N = cons(1, () => N.map(n => n + 1)); //nature number list
