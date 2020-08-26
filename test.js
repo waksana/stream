@@ -1,5 +1,8 @@
-var {cons} = require('.');
+var {cons, list, Empty} = require('.');
 var assert = require('assert');
+
+cons(n => [1, n.map()]);
+(ones) => cons(1, ones);
 
 var N = cons(1, () => N.map(n => n + 1)); //nature number list
 var ones = cons(1, () => ones);
@@ -22,3 +25,16 @@ assert.deepEqual(prime.take(5), [2, 3, 5, 7, 11]);
 var fibs = cons(0, cons(1, () => fibs.zipWith(fibs.tail, (a, b) => a + b)));
 
 assert.deepEqual(fibs.take(6), [0, 1, 1, 2, 3, 5]);
+
+//flatten
+assert.deepEqual(ones.map(o => list(1,2,3)).flatten().take(5), [1, 2, 3, 1, 2]);
+
+//bind
+assert.deepEqual(list(1, 2, 3).bind(x => list(9, 8, 7).bind(y => x + y > 9 ? list({x, y}) : Empty)).takeAll(), [
+  { x: 1, y: 9 },
+  { x: 2, y: 9 },
+  { x: 2, y: 8 },
+  { x: 3, y: 9 },
+  { x: 3, y: 8 },
+  { x: 3, y: 7 }
+]);

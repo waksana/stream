@@ -1,14 +1,14 @@
 {
-  "name": "list8",
+  "name": "stream",
   "version": "0.0.2",
-  "description": "a js structure for infinite lazy list and some method to control the list Edit",
+  "description": "a js data structure for stream processing.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waksana/infinite-list.git"
+    "url": "git+https://github.com/waksana/stream.git"
   },
   "keywords": [
     "list",
@@ -17,7 +17,7 @@
   "author": "waksana@qq.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/waksana/infinite-list/issues"
+    "url": "https://github.com/waksana/stream/issues"
   },
-  "homepage": "https://github.com/waksana/infinite-list#readme"
+  "homepage": "https://github.com/waksana/stream#readme"
 }

@@ -1,10 +1,10 @@
-# list8
-a js data structure for infinity lazy list and some method to control the list. 8 indicates infinity
+# Stream
+a js data structure for stream processing.
 
 ## Usage
 
 ```javascript
-const {cons} = require('list8');
+const {cons} = require('.');
 
 // you can put tail in () => ... to reference self
 const N = cons(1, () => N.map(n => n + 1));
